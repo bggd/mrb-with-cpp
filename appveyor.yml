@@ -1,0 +1,17 @@
+os: Visual Studio 2015
+
+environment:
+  matrix:
+    - build_config: cxx_exception_config.rb
+
+    - build_config: cxx_abi_config.rb
+
+init:
+  - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
+  - set YACC=C:\cygwin\bin\bison.exe
+  - git submodule update --init
+  - cd .\mruby
+
+build_script:
+  - set MRUBY_CONFIG=..\%build_config%
+  - ruby .\minirake test --verbose
