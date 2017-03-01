@@ -9,6 +9,8 @@ environment:
 init:
   - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
   - set YACC=C:\cygwin\bin\bison.exe
+
+install:
   - git submodule update --init
   - cd .\mruby
 
