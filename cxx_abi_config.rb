@@ -7,6 +7,7 @@ MRuby::Build.new do |conf|
     #conf.cxx.flags += %w(-pedantic-errors)
   end
 
+  conf.gembox 'full-core'
   conf.gem :github => 'bggd/dummy-c99gem'
   conf.gem :github => 'bggd/dummy-cxxgem'
 
