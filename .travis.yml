@@ -2,7 +2,7 @@ language: c
 
 env:
   - MRUBY_CONFIG=../cxx_exception_config.rb
-  - MRUBY_CONFIG=../cxx_abi_config.rb
+    #- MRUBY_CONFIG=../cxx_abi_config.rb
 
 script:
   - git submodule update --init

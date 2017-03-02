@@ -4,7 +4,7 @@ environment:
   matrix:
     - build_config: cxx_exception_config.rb
 
-    - build_config: cxx_abi_config.rb
+      #- build_config: cxx_abi_config.rb
 
 init:
   - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
