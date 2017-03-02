@@ -4,8 +4,11 @@ MRuby::Build.new do |conf|
     toolchain :visualcpp
   else
     toolchain :gcc
-    conf.cxx.flags += %w(-pedantic-errors)
+    #conf.cxx.flags += %w(-pedantic-errors)
   end
+
+  conf.gem :github => 'bggd/dummy-c99gem'
+  conf.gem :github => 'bggd/dummy-cxxgem'
 
   conf.enable_debug
 
