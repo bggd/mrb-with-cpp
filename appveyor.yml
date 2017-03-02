@@ -16,4 +16,4 @@ install:
 
 build_script:
   - set MRUBY_CONFIG=..\%build_config%
-  - ruby .\minirake test --verbose
+  - ruby .\minirake all test --verbose
