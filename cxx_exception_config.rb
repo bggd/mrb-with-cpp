@@ -8,8 +8,8 @@ MRuby::Build.new do |conf|
   end
 
   conf.gembox 'full-core'
-  #conf.gem :github => 'bggd/dummy-c99gem'
-  #conf.gem :github => 'bggd/dummy-cxxgem'
+  conf.gem :github => 'bggd/dummy-c99gem'
+  conf.gem :github => 'bggd/dummy-cxxgem'
 
   conf.enable_debug
 
